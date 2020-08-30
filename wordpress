@@ -1,0 +1,13 @@
+# wordpresswordpress
+- Là hệ thống quản lý nội dung miễn phí và mã nguồn mở xây dựng dựa trên PHP và MySQL. Được phát hành vào năm 2003.
+- Trước khi cài dặt wordpress ta phải tiến hành cài đặt LAMP
+## Giới thiệu về LAMP
+-LAMP là một hệ thống các phần mềm để tạo dựng môi trường máy chủ web được viết bằng PHP. Có khả năng chứa và phân phối các trang web động được viết bằng PHP.
+
+-LAMP là viết tắt của LINUX, APACHE, MySQL, PHP
+
+-Trong đó 
+- LINUX là hệ đièu hành LINUX
+- APACHE Là phần mềm máy chủ web, có thể thực hiện các request(Yêu cầu) được gọi tới máy chủ thông qua các giao thức HTTP.
+- MySQL là hệ quản trị cơ sở dữ liệu (thường dùng mariadb)
+- PHP là ngôn ngữ lập trình cho hoạt động kịch bản của máy chủ
