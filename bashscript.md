@@ -11,4 +11,4 @@ pwd ; whoami
 Tập lệnh trên sẽ hoạt động như thế này.Đầu tien nó sẽ hiển thị thông tin về thư mục hiện tại tiếp theo nó sẽ hiển thị thông tin về người dùng đó , cái mà bạn đã đăng nhập
 
 Sử dụng cách này bạn có thể kết hợp nhiều lệnh với nhau trên một
-![alt](https://media.cheggcdn.com/media/48b/48b0bfac-a1d2-436b-bcf4-6450a19a7aaf/phpKKiPHk.png)
+![alt](https://media.cheggcdn.com/media/48b/48b0bfac)
