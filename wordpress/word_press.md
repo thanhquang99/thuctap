@@ -86,7 +86,10 @@ systemctl restart httpd
 ```
 [Địa chỉ IP]/info.php
 ```
-![]()
+Nếu hiện ra như hình bên dưới là đã thành công
+
+![alt](/images/Screenshot_3.png)
+
 ## Cài đặt wordpress
 1. Tạo cơ sở dữ liệu cho wordpress 
 - Đăng nhập vào tài khoản root của cơ sở dữ liệuliệu
@@ -95,16 +98,16 @@ mysql -u root -p
 ```
 Bạn cần nhập Password mà bạn đã thiết lạp cài đặt khi cài đặt Mariadb. Khi nhập xong sẽ chuyển sang màn hình Mariadb .
 
-Tiếp theo thiết lập bạn sẽ tạo cơ sở dữ liệu cho wordpress. Có thể dùng tên bất kỳ cho tên của Database.Chú ý khi cài mật khẩu nên tránh chữ @
+Tiếp theo thiết lập bạn sẽ tạo cơ sở dữ liệu cho wordpress. Có thể dùng tên bất kỳ cho tên của Database
 ```
 CREATE DATABASE wordpress;
-CREATE USER thanhquang@localhost IDENTIFIED BY 'Khuongquang99';
+CREATE USER thanhquang@localhost INDENTIFIED by 'Khuongquang99@';
 ```
-Chúng ta dã tạo được tài khoản có user : khuongquang và password : Khuongquang99
+Chúng ta dã tạo được tài khoản có user : khuongquang và password : Khuongquang99@
 
 Tiến hành cấp quyền quản lý CSDL Wordpress cho user mới tạo:
 ```
-GRANT ALL PRIVILEGES ON wordpress.* TO thanhquang@localhost IDENTIFIED BY 'Khuongquanng99';
+GRANT ALL PRIVILEGES ON wordpress.* TO thanhquang@localhost IDENTIFIED BY 'Khuongquanng99@';
 ```
 Xác thực lại những thay đổi về quyền:
 ```
@@ -157,7 +160,7 @@ define( 'DB_NAME', 'wordpress' );
 define( 'DB_USER', 'thanhquang' );
 
 /** MySQL database password cho user */
-define( 'DB_PASSWORD', 'Khuongquang99' );
+define( 'DB_PASSWORD', 'Khuongquang99@' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -177,3 +180,14 @@ systemctl restart httpd
 ```
 ## Hoàn tất phần giao diện
 
+
+![alt](/images\Screenshot_4.png)
+
+
+![alt](/images\Screenshot_5.png)
+
+
+![alt](/images\Screenshot_6.png)
+
+
+![alt](/images\Screenshot_7.png)

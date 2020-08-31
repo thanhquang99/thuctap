@@ -177,8 +177,97 @@ nếu thỏa mãn điều kiện trong `if` thì thực hiện câu lệnh sau `
 
 - So sánh số
 
--eq=[=]
+-eq: bằng
 
--ge=[>=]
+-ge: lớn hơn hoặc bằng
 
--
+-gt: lớn hơn
+
+-le: bé hơn hoặc bằng
+
+-lt: bé hơn
+
+-ne: khác
+
+- String comparison (so sánh chỗichỗi)
+
+Tương tự như so sánh số so sánh chuỗi cũng có các toán tử tương tự
+
+str1 = str2 :trả về true nếu str1 = str2
+
+str1 != str2 :trả về true nếu str1 khác str2
+
+str1 < str2:trả về true nếu str1 < str2
+
+str1 > str2:trả về true nếu str1 > str2
+
+-n str1 :trả về true nếu length str1 lớn hơn 0
+
+-z str1 :trả về true nếu lenth str1 bằng 00
+
+```
+#!/bin/bash
+user ="thanhquang"
+if [$user = $USER]
+then
+echo "The user $user  is the current logged in user"
+fi
+```
+```
+The user thanhquang is the current logged in user
+```
+` Lưu ý :khi dùng dấu >,< thì phải thêm \ đằng trước các dấu đó `
+```
+#!/bin/bash
+val1=text
+val2="another text"
+if [ $val1 \> $val2 ]
+then
+echo "$val1 is greater than $val2"
+else
+echo "$val1 is less than $val2"
+fi
+```
+```
+./myscript: line 5: [: too many arguments
+text is less than another text
+```
+Dù tập lệnh được thực hiện nhưng lại có cảnh báo để loại bỏ cảnh báo này ta hãy sửa 
+
+`if [ $val1 \> "$val2" ]`
+
+```
+sort ./myfile
+```
+```
+raevskym
+Raevskym
+```
+Khi chúng ta sử dụng lệnh sort thì nó sẽ sắp xếp ngược lại theo ngôn ngữ hệ thống (nghĩa là nó đảo ngược lại sắp xếp)
+
+8. File check
+
+Các lệnh check file 
+
+`-d file` :kiểm tra nếu tập tin tồn tại và là một thư mục
+
+`-e file` :kiểm tra nếu tập tin tồn tại
+
+`-f file` :kiểm tra nếu tập tin tồn tại và là file
+
+`-r file` :kiểm tra nếu file tồn tại và có thể đọc được
+
+`-s file П` :kiểm tra nếu file tồn tại và là file trống
+
+`-w file` :kiểm tra nếu file tồn tại và có thể viết được
+
+`-x file` :kiểm tra nếu file tồn tại và có thể thực thi được
+
+`file1 -nt file2` :kiểm tra nếu file1 mới hơn file2
+
+`file1 -ot file2 `:kiểm tra nếu file1 cũ hơn file2
+
+`-O file` :kiểm tra xem file có tồn tại và thuộc quyền sở hữu của người dùng hiện tại hay không
+
+`-G file` : kiểm tra xem file có tồn tại và thuộc quyền sở hữu của group hiện tại hay không
+
