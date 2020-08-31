@@ -98,7 +98,7 @@ Bạn cần nhập Password mà bạn đã thiết lạp cài đặt khi cài đ
 Tiếp theo thiết lập bạn sẽ tạo cơ sở dữ liệu cho wordpress. Có thể dùng tên bất kỳ cho tên của Database
 ```
 CREATE DATABASE wordpress;
-CREATE USER thanhquang@localhost INDENTIFIED by 'Khuongquang99@';
+CREATE USER thanhquang@localhost IDENTIFIED BY 'Khuongquang99@';
 ```
 Chúng ta dã tạo được tài khoản có user : khuongquang và password : Khuongquang99@
 
