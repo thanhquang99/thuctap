@@ -181,13 +181,13 @@ systemctl restart httpd
 ## Hoàn tất phần giao diện
 
 
-![alt](/images\Screenshot_4.png)
+![alt](/images/Screenshot_4.png)
 
 
-![alt](/images\Screenshot_5.png)
+![alt](/images/Screenshot_5.png)
 
 
-![alt](/images\Screenshot_6.png)
+![alt](/images/Screenshot_6.png)
 
 
-![alt](/images\Screenshot_7.png)
+![alt](/images/Screenshot_7.png)
