@@ -101,13 +101,13 @@ Bạn cần nhập Password mà bạn đã thiết lạp cài đặt khi cài đ
 Tiếp theo thiết lập bạn sẽ tạo cơ sở dữ liệu cho wordpress. Có thể dùng tên bất kỳ cho tên của Database
 ```
 CREATE DATABASE wordpress;
-CREATE USER thanhquang@localhost INDENTIFIED by 'Khuongquang99@';
+CREATE USER thanhquang@localhost INDENTIFIED by 'Khuongquang99';
 ```
-Chúng ta dã tạo được tài khoản có user : khuongquang và password : Khuongquang99@
+Chúng ta dã tạo được tài khoản có user : khuongquang và password : Khuongquang99
 
 Tiến hành cấp quyền quản lý CSDL Wordpress cho user mới tạo:
 ```
-GRANT ALL PRIVILEGES ON wordpress.* TO thanhquang@localhost IDENTIFIED BY 'Khuongquanng99@';
+GRANT ALL PRIVILEGES ON wordpress.* TO thanhquang@localhost IDENTIFIED BY 'Khuongquanng99';
 ```
 Xác thực lại những thay đổi về quyền:
 ```
@@ -160,7 +160,7 @@ define( 'DB_NAME', 'wordpress' );
 define( 'DB_USER', 'thanhquang' );
 
 /** MySQL database password cho user */
-define( 'DB_PASSWORD', 'Khuongquang99@' );
+define( 'DB_PASSWORD', 'Khuongquang99' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
