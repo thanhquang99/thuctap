@@ -96,14 +96,14 @@ Nếu hiện ra như hình bên dưới là đã thành công
 ```
 mysql -u root -p
 ```
-Bạn cần nhập Password mà bạn đã thiết lậpập cài đặt khi cài đặt Mariadb. Khi nhập xong sẽ chuyển sang màn hình Mariadb .
+Bạn cần nhập Password mà bạn đã thiết lập cài đặt khi cài đặt Mariadb. Khi nhập xong sẽ chuyển sang màn hình Mariadb .
 
 Tiếp theo thiết lập bạn sẽ tạo cơ sở dữ liệu cho wordpress. Có thể dùng tên bất kỳ cho tên của Database
 ```
 CREATE DATABASE wordpress;
 CREATE USER thanhquang@localhost INDENTIFIED by 'Khuongquang99';
 ```
-Chúng ta dã tạo được tài khoản có user : khuongquang và password : Khuongquang99
+Chúng ta đã tạo được tài khoản có user : khuongquang và password : Khuongquang99
 
 `Lưu ý :không nên passwd có kí tự @`
 
