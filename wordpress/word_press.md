@@ -109,7 +109,7 @@ Chúng ta dã tạo được tài khoản có user : khuongquang và password : 
 
 Tiến hành cấp quyền quản lý CSDL Wordpress cho user mới tạo:
 ```
-GRANT ALL PRIVILEGES ON wordpress.* TO thanhquang@localhost IDENTIFIED BY 'Khuongquanng99';
+GRANT ALL PRIVILEGES ON wordpress.* TO thanhquang@localhost IDENTIFIED BY 'Khuongquang99';
 ```
 Xác thực lại những thay đổi về quyền:
 ```
