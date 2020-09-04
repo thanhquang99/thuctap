@@ -43,8 +43,8 @@ do
 echo $var
 done
 ```
-## Field separators (dấu phân tách trường nội bộ)
-Tính năng IFS (Internal Field Separator) là một biến môi trường đặc biệt .Theo mặc định bash coi các kí tự sau là dấu phân cách trường
+## Field separators 
+ IFS (Internal Field Separator) là một biến môi trường đặc biệt .Theo mặc định bash coi các kí tự sau là dấu phân cách trường
 
 - Space(dấu cách)
 
@@ -282,3 +282,4 @@ Iteration number: 14
 Khi biến `var1 ` thỏa mãn điều kiện if thì câu lệnh `echo` được bỏ qua và không được thực hiện
 
 
+## [Tài liệu tham khảo](https://medium.com/introduction-into-bash/bash-scripts-part-2-loops-39968fdc3d61)
