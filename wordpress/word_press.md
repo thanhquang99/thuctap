@@ -42,7 +42,7 @@ systemctl start mariadb
 ```
 mysql_secure_installation
 ```
-- Thiết lập một số cáu hinh hình như các bước sau
+- Thiết lập một số cấu hình như các bước sau
 1. ấn enter sau đó ấn y để đặt mật khẩu cho root
 2. nhập mật khẩu mới
 3. nhập lại mật khẩu 
