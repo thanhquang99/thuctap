@@ -144,11 +144,11 @@ cp -Rvf /root/wordpress/* /var/www/html
 ``` 
 cd /var/www/html
 ```
-- File có cấu hình wp là file wp-config.php. Tuy nhiên ở đây chỉ có file wp-config-sample.php.Tiến hành cophy lại file cấu hình như sau:
+- File có cấu hình wp là file wp-config.php. Tuy nhiên ở đây chỉ có file wp-config-sample.php.Tiến hành copy lại file cấu hình như sau:
 ```
 cp wp-config-sample.php wp-config.php
 ```
-- Mở file wp-config.php với trình vi để sửa:
+- Mở file wp-config.php với trình soạn thảo vi để sửa:
 ```
 vi wp-config.php
 ```
