@@ -34,9 +34,10 @@ Chúng ta có thể sử dụng MySQL và Mariadb (ở đây chúng ta sẽ cài
 ```
 yum -y install mariadb mariadb-server
 ```
-- Khởi động Mariadb Service
+- Khởi động Mariadb Service 
 ```
 systemctl start mariadb
+systemctl enable mariadb
 ```
 - Cài mật khẩu root cho cơ sở dữ liệu 
 ```
