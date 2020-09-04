@@ -194,3 +194,5 @@ Chúng ta sẽ vào browser và gõ địa chỉ ip
 
 
 ![alt](/images/Screenshot_7.png)
+
+![alt](/images/Screenshot_8.png)
