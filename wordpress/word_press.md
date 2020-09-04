@@ -181,7 +181,7 @@ chown -R apache:apache /var/www/*
 systemctl restart httpd
 ```
 ## Hoàn tất phần giao diện
-Chúng ta sẽ vào browser và gõ địa chỉ ip
+Chúng ta sẽ vào browser và gõ địa chỉ ip của máy mà chúng ta thiết lập 
 
 
 ![alt](/images/Screenshot_4.png)
