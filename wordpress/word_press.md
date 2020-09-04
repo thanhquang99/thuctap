@@ -195,4 +195,5 @@ Chúng ta sẽ vào browser và gõ địa chỉ ip của máy mà chúng ta thi
 
 ![alt](/images/Screenshot_7.png)
 
+
 ![alt](/images/Screenshot_8.png)
