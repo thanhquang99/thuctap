@@ -13,7 +13,7 @@
 - PHP là ngôn ngữ lập trình cho hoạt động kịch bản của máy chủ
 ## Tiến trình cài đặt LAMP
 1. Cài đặt LINUX (centos 7)
-2. Cài đătk Apache
+2. Cài đặt Apache
 - Tiến hành cài đặt và khởi động service
 ```
 yum install -y httpd
