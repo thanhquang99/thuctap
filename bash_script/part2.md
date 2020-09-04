@@ -34,3 +34,12 @@ do
 echo display $car
 done
 ```
+Chúng ta cũng có thể cho các từ cần lặp vào một file riêng lẻ rồi gọi ra file đấy để lặp(có thể sử dụng lệnh cat)
+```
+#!bin/bash
+list=myfile
+for var in $(cat $list)
+do
+echo $var
+done
+```
