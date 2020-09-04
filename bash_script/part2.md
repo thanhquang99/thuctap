@@ -43,7 +43,7 @@ do
 echo $var
 done
 ```
-## Field separators (dấu phân tách trường nội bộbộ)
+## Field separators (dấu phân tách trường nội bộ)
 Tính năng IFS (Internal Field Separator) là một biến môi trường đặc biệt .Theo mặc định bash coi các kí tự sau là dấu phân cách trường
 
 - Space(dấu cách)
