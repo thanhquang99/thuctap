@@ -92,11 +92,11 @@ Nếu hiện ra như hình bên dưới là đã thành công
 
 ## Cài đặt wordpress
 1. Tạo cơ sở dữ liệu cho wordpress 
-- Đăng nhập vào tài khoản root của cơ sở dữ liệuliệu
+- Đăng nhập vào tài khoản root của cơ sở dữ liệu
 ```
 mysql -u root -p
 ```
-Bạn cần nhập Password mà bạn đã thiết lạp cài đặt khi cài đặt Mariadb. Khi nhập xong sẽ chuyển sang màn hình Mariadb .
+Bạn cần nhập Password mà bạn đã thiết lậpập cài đặt khi cài đặt Mariadb. Khi nhập xong sẽ chuyển sang màn hình Mariadb .
 
 Tiếp theo thiết lập bạn sẽ tạo cơ sở dữ liệu cho wordpress. Có thể dùng tên bất kỳ cho tên của Database
 ```
@@ -181,6 +181,7 @@ chown -R apache:apache /var/www/*
 systemctl restart httpd
 ```
 ## Hoàn tất phần giao diện
+Chúng ta sẽ vào browser và gõ địa chỉ ip
 
 
 ![alt](/images/Screenshot_4.png)
