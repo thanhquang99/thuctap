@@ -142,3 +142,111 @@ Found the -c option
 ```
 -a -b -c là các nhánh mình cài đặt để có thể sử dụng lệnh.Khi ta gọi ra nhánh -a thì nó chỉ thực hiện việc của nhánh -a .Các nhánh khác cũng tương tự như vậy
 
+## How to distinguish between keys and parameters (Cách phân biệt giữa nhánh và tham số)
+- Để phân biệt giữa chúng thì ta sẽ dùng `--`
+```
+#!/bin/bash
+while [ -n "$1" ]
+do
+case "$1" in
+-a) echo "Found the -a option" ;;
+-b) echo "Found the -b option";;
+-c) echo "Found the -c option" ;;
+--) shift
+break ;;
+*) echo "$1 is not an option";;
+esac
+shift
+done
+count=1
+for param in $@
+do
+echo "Parameter #$count: $param"
+count=$(( $count + 1 ))
+done
+```
+```
+./myscript -a -b -c -- 5 10 15
+Found the -a option
+Found the -b option
+Found the -c option
+Parameter #1: 5
+Parameter #2: 10
+Parameter #3: 15
+```
+Các nhánh sẽ là `-a -b -c` và các tham số sẽ là `5 10 15`
+
+## Receiving data from the user
+Đôi khi script cần dữ liệu mà người dùng phải nhập . Lúc đó ta sẽ nghĩ đến `read`
+```
+#!/bin/bash
+echo -n "Enter your name: "
+read name
+echo "Hello $name, welcome to my program."
+```
+```
+./myscript
+Enter your name: Quang
+Hello Quang, welcome to my program.
+```
+Lệnh read có chức năng gắn biến `name` thành `quang`
+
+Ta có thể dùng biến `$REAPLY` để gắn giá trị mà cần người dùng nhập
+
+```
+#!/bin/bash
+read -p "Enter your name: "
+echo Hello $REPLY, welcome to my program.
+```
+```
+./myscript
+Enter your name: Quang
+Hello Quang, welcome to my program.
+```
+Ta có thể giới hạn thời gian nhập từ người dùng bằng lệnh `read -t 5 -p`
+```
+#!/bin/bash
+if read -t 5 -p "Enter your name: " name
+then
+echo "Hello $name, welcome to my script"
+else
+echo "Sorry, too slow!"
+fi
+```
+```
+./myscript
+Enter your name: Sorry, to slow!
+```
+## Using standard keys
+-a :Liệt kê tất cả đối tượng
+
+-c :
+
+-d : thư mục chỉ định
+
+-e :mở rộng đối tượng
+
+-f :Chỉ định tệp để đọc dữ liệu. 
+
+-h : Trợ giúp lệnh hiển thị.
+
+-i :bỏ qua
+
+-l :Thực hiện kết xuất dữ liệu đầy đủ 
+
+-n :sử dụng chế độ không tương tác
+
+-o :Cho phép bạn chỉ định tệp mà bạn muốn chuyển hướng đầu ra. 
+
+-q :Thực hiện lệnh trong chế độ tĩnh. 
+
+-r :Tập tin và tập tin quy trình
+
+-s :Thực hiện lệnh trong chế độ im lặng. 
+
+-v :Thực hiện sản lượng dài dòng. 
+
+-x :Loại trừ đối tượng. 
+
+-y :Trả lời " có " với tất cả câu hỏi. 
+
