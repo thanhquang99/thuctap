@@ -250,3 +250,29 @@ Enter your name: Sorry, to slow!
 
 -y :Trả lời " có " với tất cả câu hỏi. 
 
+## Entering passwords 
+Đôi khi những thứ nhập từ người dùng mà bạn không muốn hiển thị thì ta sẽ dùng ` read -s ` để làm những thứ người nhập từ màn hình sẽ có màu giống với nền của màn hình và sẽ làm ẩn đi những thứ ta cần che giấu
+
+## Reading data from a file
+- `cmd1|cmd2` đầu ra của câu lệnh 1 sẽ là dữ liệu đầu vào của câu lệnh 2
+
+```
+#!/bin/bash
+count=1
+cat myfile | while read line
+do
+echo "Line $count: $line"
+count=$(( $count + 1 ))
+done
+echo "Finished"
+```
+```
+Line 1: hello
+Line 2: toi
+Line 3: la
+Line 4: quang
+Finished 
+```
+Trong đó `hello toi la quang ` là nội dung của myfile
+
+## [Tài liệu tham khảo](https://medium.com/introduction-into-bash/bash-scripts-part-3-command-line-options-and-switches-97f1f3a30334)
