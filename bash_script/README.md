@@ -6,3 +6,4 @@
 ##  []()
 ##  []()
 ##  []()
+##  [script cài wordpress](https://github.com/thanhquang99/thuctap/blob/master/bash_script/scriptcaiwp.md)
