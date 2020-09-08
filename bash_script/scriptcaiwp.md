@@ -1,5 +1,9 @@
 ```
 #!/bin/bash
+if [ -e /usr/bin/mysql ]
+then 
+echo "da cai dat mysql "
+else
 cd ~
 echo " ------- Tien hanh cai dat apache -------"
 yum install -y httpd
@@ -49,4 +53,6 @@ chown -R apache:apache /var/www/*
 systemctl restart httpd
 echo "DONE"
 echo "tat ca moi thu da xong gio ban co the vao browser va go dia chi ip cua may da cai dat va trai nghiem "
+
+fi
 ```
