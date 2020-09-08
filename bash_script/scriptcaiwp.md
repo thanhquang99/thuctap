@@ -26,6 +26,8 @@ EOF
 	
 	echo "DONE"
 	sleep 3
+
+
 	echo "------- Tien hanh cai dat PHP -------- "
 	sleep 3
 	yum install epel-release -y
