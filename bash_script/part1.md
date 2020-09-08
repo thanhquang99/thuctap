@@ -271,3 +271,4 @@ Các lệnh check file
 
 `-G file` : kiểm tra xem file có tồn tại và thuộc quyền sở hữu của group hiện tại hay không
 
+[Tài liệu tham khảo ](https://medium.com/introduction-into-bash/bash-scripts-part-1-getting-started-2a6cec26852)
