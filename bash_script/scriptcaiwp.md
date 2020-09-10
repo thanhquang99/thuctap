@@ -71,3 +71,14 @@ EOF
 	echo "tat ca moi thu da xong gio ban co the vao browser va go dia chi ip cua may da cai dat va trai nghiem "
 fi
 ```
+`Những lưu ý cần thiết `: 
+- Câu lệnh cat  << EOF |      là để ta có thể từ ngoài linux mà có thể thao tác các lệnh trong phần sau dấu `|` và khi kết thúc các câu lệnh phải có `EOF` để phân biệt là đã kết thúc thao tác trong Mysql
+
+- Câu lệnh `cat  << EOF` phải luôn đặt ở đầu dòng 
+
+- ` mysql -uroot -pKhuongquang99 -e "Command"` giống như khi ta `ssh` ta có thể thao tác các câu lệnh từ ngoài linux
+
+- Cấu trúc câu lệnh thay thế từ trong file :
+```
+sed -i 's/[Từ cần thay thế}/[Từ thay thế]/g' [PATH of file]
+```
