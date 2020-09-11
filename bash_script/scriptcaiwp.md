@@ -82,3 +82,4 @@ fi
 ```
 sed -i 's/[Từ cần thay thế}/[Từ thay thế]/g' [PATH of file]
 ```
+ 
