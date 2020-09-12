@@ -61,7 +61,7 @@ Sau khi thiết lập, Kích hoạt mariadb để khởi động cùng hệ th�
 ```
 yum install epel-release
 yum update epel-release
-rpm -Uvh https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
 ```
 - Cài Yum-utils vì cần tiện ích yum-config-manager để cài đặt:
 ```
