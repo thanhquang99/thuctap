@@ -67,3 +67,5 @@ wp
 
 
 `Lưu ý:` chúng ta bây giờ có thể vào browser gõ `[địa chỉ ip]/wordpress ` để có thể là tiếp như các phiên bản centos 7.
+
+![alt](/images/Screenshot_9.png)
