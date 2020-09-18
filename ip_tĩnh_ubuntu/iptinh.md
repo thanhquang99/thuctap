@@ -7,7 +7,7 @@ vi /etc/netplan/00-installer-config.yaml
 ```
 Ta hãy chỉnh sửa flie theo hình dưới đây
 
-![alt](/images/Screenshot_10.png)
+![alt](/images/Screenshot_13.png)
 
 ```
 netplan apply
