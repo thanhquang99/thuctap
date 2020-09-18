@@ -1,4 +1,4 @@
-# IP CHO UBUNTU 20.04 server
+# IP TĨNH CHO UBUNTU 20.04 server
 ## Cấu hình bằng Netplan
 Nếu chúng ta sử dụng netplan thì ta sử dụng câu lệnh lệnh vi sửa file `/etc/netplan/00-installer-config.yaml`
 
