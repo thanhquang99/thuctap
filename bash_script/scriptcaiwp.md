@@ -66,8 +66,8 @@ sleep 3
 	sleep 3
 	yum -y install php-gd
 	yum install wget -y
-	wget http://wordpress.org/latest.tar.gz
-	tar xvfz latest.tar.gz
+	wget https://vi.wordpress.org/wordpress-4.5.22-vi.tar.gz
+	tar xvfz wordpress-4.5.22-vi.tar.gz
 	cp -Rvf /root/wordpress/* /var/www/html
 	cd /var/www/html
 	cp wp-config-sample.php wp-config.php

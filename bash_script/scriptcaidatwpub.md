@@ -48,8 +48,8 @@ sleep 3
 
 function wp {
 
-	cd /tmp && wget https://wordpress.org/latest.tar.gz
-	tar -xvf latest.tar.gz
+	cd /tmp && wget https://vi.wordpress.org/wordpress-4.5.22-vi.tar.gz
+	tar xvfz wordpress-4.5.22-vi.tar.gz
 	cp -R wordpress /var/www/html/
 	chown -R www-data:www-data /var/www/html/wordpress/
 	chmod -R 755 /var/www/html/wordpress/
