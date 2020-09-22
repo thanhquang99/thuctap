@@ -51,6 +51,7 @@ WHERE
 	(expr|column_1) IN ('value1','value2',...);
 ```
 như ví dụ minh họa trên ta có thể sử chọn chính xác các biến mà ta muốn hiện 
+
 8. BETWEEN - AND : cho phép ta xác định vùng giớ hạn nằm giữ 2 giá trị mà ta đã nêu
 
 ```
@@ -160,7 +161,7 @@ WHERE
 ```
 Ở ví dụ này truy vấn con sẽ chọn officecode có country =usa để làm dữ liệu cho truy vấn lastname và firstname của những nhân viên có country =usa
 
-18. INSERT : Câu INSERTlệnh cho phép bạn chèn một hoặc nhiều hàng vào bảng
+18. INSERT : Câu INSERTlệnh cho phép bạn chèn một hoặc nhiều cột vào bảng
 ```
 INSERT INTO table(c1,c2,...)
 VALUES (v1,v2,...);
@@ -227,4 +228,45 @@ INSERT INTO cities(name,population)
 VALUES('New York',8008278),
 	  ('Los Angeles',3694825),
 	  ('San Diego',1223405);
+```
+22.  EXISTS
+- có 2 giá trị được trả về là dúng hoặc sai 
+```
+SELECT 
+    customerNumber, 
+    customerName
+FROM
+    customers
+WHERE
+    EXISTS(
+	SELECT 
+            1
+        FROM
+            orders
+        WHERE
+            orders.customernumber 
+		= customers.customernumber);
+```
+nếu 
+
+23. UNION
+- cho phép bạn kết hợp nhiều kết quả truy vấn thành một kết quả duy nhất 
+```
+SELECT column_list
+UNION [DISTINCT | ALL]
+SELECT column_list
+UNION [DISTINCT | ALL]
+SELECT column_list
+...
+```
+
+
+24. MINUS
+- MInus sẽ so sánh kết quả 2 truy vấn và trả về dòng khác biệt 
+```
+SELECT select_list1 
+FROM table_name1
+MINUS 
+SELECT select_list2 
+FROM table_name2;
 ```
