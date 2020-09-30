@@ -99,3 +99,33 @@ CREATE TABLE products(
 ```
 Ở ví dụ này ta thấy rằng categoryId sẽ được lấy thông tin từ bảng categories
 
+##  MySQL Storage Engines
+- Chúng ta sẽ tìm hiểu các công cụ lưu trữ trong MySQL để sử dụng một cách hiệu quả và tối ưu hóa cơ sở dữ liêụ của mình 
+- Các công cụ lưu trữ trong MySQl :
+1. MyISAM
+
+MyISAM mở rộng công cụ lưu trữ ISAM trước đây.Các bảng MyISAM được tối ưu hóa về tốc độ và nén dữ liệu
+
+Kích thước của MyISAM có thể lên tới 256TB. Nó giới hạn hiệu suất đọc và viết dữ liệu vì vậy nó thường dùng chỉ để đọc dữ liệu .Các bảng MyISAM không an toàn cho giao dịch.
+
+Từ bản 5.5 về trước thì nó là công cụ lưu trữ mặc định còn các bản về sau thì là InnoDB
+
+2. InnoDB
+
+Các bảng InnoDB hỗ trợ cho đầy đủ các giao dịch và hỗ trợ ACID .Ngoài ra còn hỗ trợ các  foreign keys, commit, rollback, roll-forward 
+
+Kích cỡ của bảng có thể lên đến 64TB
+
+3. MERGE
+
+Bảng MERGE là một bảng ảo kết hợp nhiều bảng MyISAM có cấu trúc tương tự như một bảng.
+
+MySQL chỉ cho phép bạn thực hiện các thao tác SELECT,DELETE,UPDATE,INSERT cho bảng MERGE
+
+Nếu sử dụng DROP thì bảng MERGE sẽ bị xóa và không ảnh hưởng gì tới các bảng khác mà nó lấy dữ liệu
+
+4. Memory
+
+Lưu trữ tất cả dữ liệu trong RAM để có thể truy suất nhanh kết quả .Engine này trước đây gọi là HEAP Engine.Nhưng giờ được sử dụng ít dần đi do InnoDB chiếm lợi thế hơn
+
+5. Archive
