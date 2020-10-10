@@ -5,4 +5,4 @@ Mysql workbanch là một chương trình giúp người dùng tương tác vớ
 ## Hướng dẫn sử dụng Mysql workbanch
 1. Tạo connection
 
-![alt](/images/Screenshot_155.png)
+![alt](/images/Screenshot_15.png)
