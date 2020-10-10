@@ -20,10 +20,7 @@ mysqldump -u [uname] -p [tên db] | gzip >  [file backup].sql.gz
 ```
 
 ## Restore file backup
-```
-mysql -u [User] -p < [file backup].sql
-```
-## import
+
 Lưu ý : để làm được điều này ta cần phải vào trong mysql và tạo ra một database xong rồi import vào
 
 ```
