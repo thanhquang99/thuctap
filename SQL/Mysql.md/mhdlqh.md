@@ -78,5 +78,3 @@ cbcoithi(macb,hocb,demcb,tencb,mapt,giamsat)
 diem(diem,sbd,mamt)
 
 dangki(sbd,man)
-
-hết
