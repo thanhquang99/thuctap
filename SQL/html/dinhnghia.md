@@ -76,5 +76,64 @@ vd :
 -  `<strong>` In đậm (nhấn mạnh `<b>)`
 - `<em>`(emphasized): Chữ in nghiêng, Nhấn mạnh hơn `<i>`
 
+### bảng
+- Thẻ `<table>` dùng để xác định một cái bảng.
+- Thẻ `<tr>` dùng để xác định một hàng bên trong bảng.
+- Thẻ `<th>` dùng để xác định một ô (tiêu đề) bên trong hàng.
+- Thẻ `<td>` dùng để xác định một ô (bình thường) bên trong hàng.
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xem ví dụ</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+        </tr>
+        <tr>
+            <td>Trần Anh Đức</td>
+            <td>03/08/1993</td>
+            <td>Nam</td>
+        </tr>
+        <tr>
+            <td>Kiều Thị Thu Hằng</td>
+            <td>04/09/1991</td>
+            <td>Nữ</td>
+        </tr>
+        <tr>
+            <td>Vương Thị Lê Na</td>
+            <td>06/10/1991</td>
+            <td>Nữ</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
+Các thuộc tính được dùng trong việc tạo bảng
+- border :- Thiết lập độ dày của cái đường viền bao xung quanh bảng và các ô.
+- cellspacing :- Thiết lập khoảng cách nằm giữa mỗi hai đường viền lân cận.
+
+- cellpadding :- Thiết lập khoảng cách vùng đệm bên trong các ô.
+
+- bgcolor : - Thiết lập màu nền cho bảng hoặc các ô.
+
+- width :- Thiết lập chiều rộng cho bảng hoặc các ô.
+
+- height : - Thiết lập chiều cao cho bảng hoặc các ô.
+
+- align : - Canh lề cho nội dung bên trong ô (theo chiều ngang)
+
+- valign :- Canh lề cho nội dung bên trong ô (theo chiều dọc)
+
+#### Cách gộp ô trong bảng
+- theo chiều ngang
+`colspan="số ô muốn gộp lại với nhau"`
+- theo chiều dọc
+`rowspan="số ô muốn gộp lại với nhau"`
 
 ## [link tài liệu tham khảo](https://viblo.asia/p/tim-hieu-ve-html-va-css-co-ban-7ymwGXV0R4p1)
