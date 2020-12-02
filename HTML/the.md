@@ -47,3 +47,5 @@
 </html>
 ```
 ![alt](/images/Screenshot_56.png)
+## Thẻ `<div>`
+Thẻ `<div>` dùng để tạo các layer cho một trang web ,ta có thể hiểu là phân chia các khu vực của trang web
