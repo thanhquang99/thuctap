@@ -1,6 +1,6 @@
 ```
 #!/bin/bash
-apt update && apt upgrade
+apt update && apt upgrade -y
 function install {
 if [ -e /usr/sbin/httpd ]
 then
