@@ -1,150 +1,301 @@
-
 <! DOCTYPE html >
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
   <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/IMG_4141.PNG"/>
 	<title>CV Khương Thanh Quang</title>
     <style>
-       
-        #header {
-            width:full;
-            height:100px;
-            background-color: mediumblue;
-        }
-        #content {
-            width:80%;
-            height: auto;
-            background-color: mediumturquoise;
-            float:left;
-        }
-        #advertisement {
-            width: 20%;
-            height: auto;
-            background-color: olive;
-            float:right;
-        }
-        #sidebar       
-            {
-            width:full;
-            height:auto;
-            background-color: skyblue;
-            clear:both;
-            }
-                #sidebar  ul {
-                  list-style-type: none;
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  background-color: #f1f1f1;
-                  overflow: hidden;
-                }
-                #sidebar li {
-                    width: 25%;
-                  float: left;
-                  background-color:yellowgreen;
-                }
+#header {
+  width: 100%;
+  height: 450px;
+  background-image: url(https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/hinh-nen-2k-dep-ve-thien-nhien-1920x1080.jpg) ;
+  background-size: 100% 100%;
+}
+#header  ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  position: relative;
+  top: 400px;
+}
+#header li {
+    width: 25%;
+    height: 50px;
+  float: left;
+  background-color:yellowgreen;
+}
 
-                #sidebar li a {
-                  display: block;
-                  color: #000;
-                  padding: 8px 16px;
-                  text-decoration: none;
-                }
+#header li a {
+  display: block;
+  height: 50px;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
 
-                #sidebar li a.active {
-                  background-color: #4CAF50;
-                  color: white;
-                }
+#header li a.active {
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+}
 
-                #sidebar li a:hover:not(.active) {
-                  background-color: #555;
-                  color: white;
-                }
-        #footer {
-            width:full;
-            height: 40px;
-            background-color: navy;
-        }
-        .row {
-            display: flex;
-        }
-        .col {
-            flex: 1;
-        }
-    </style>
+#header li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+#left {
+  width: 20%;
+  height: 1500px;
+  float: left;
+  background-color: #555;
+  overflow: scroll;
+}
+#left ul {
+  margin: 0px;
+  padding: 0px;
+  background-color:  #f1f1f1;
+
+}
+#left li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  height: 50px;
+  text-decoration: none;
+}
+
+#left li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+  
+}
+
+#left li:last-child {
+  border-bottom: none;
+  
+}
+
+#left li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#left li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+#content {
+  width: 60%;
+  height: 1500px;
+  background-image: url(https://trainghiemso.vn/wp-content/uploads/2018/05/Amir-Khani-iPhone-X-13.jpg);
+  background-size: 100% 100%;
+  float: left;
+}
+
+#content ul {
+  padding: 0;
+  margin: 0;
+}
+#content ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 40;
+  clear: left;
+  float: left;
+  border-bottom: 1px solid #555;
+}
+#content ul li img {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  float: left;
+}
+#content ul li h1{
+  font-family: 'Pacifico';
+  width: 100%;
+}
+#content ul li h3 {
+  font-family: 'Pacifico';
+}
+#content ul li p {
+  font-family: 'Merriweather';
+}
+
+#right {
+  width: 20%;
+  height: 1500px;
+  float:right;
+  background-image: url(https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/1586538.jpg)
+}
+#footer {
+  width: 100%;
+  height: 120px;
+  background-color:darkred;
+  clear: both;
+}
+#footer ul {
+  margin: 0px;
+  padding: 0px;
+}
+#footer ul li {
+  margin: 6px 6px 6px 6px;
+  text-align: center;
+}
+
+</style>
 </head>
 <body>
     <div id="header">
-        <h1 style="text-align: center;">CV của Khương Thanh Quang</h1>
-        <p style="text-align: center;">design by Khuong Thanh Quang </p>
-      </div>
-      <div id="sidebar">
-        <ul
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: auto;
-        background-color: #f1f1f1;
-        overflow: hidden;
-        >
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="https://news.cloud365.vn/">News</a></li>
-            <li><a href="https://www.facebook.com/">Contact</a></li>
-            <li><a href="https://github.com/">About</a></li>
-          </ul> 
-      </div>
-    <div class="row">
-        <div class="col" id="content">
-            <p style="text-align: center;"><h1> CV của Khương Thanh Quang</h1>
-                <img src="https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/IMG_5898.JPG" alt="ảnh không tồn tại" style="width:157px;height:236px;">
-                <br />
-                
-                <h2><u><strong> Thông tin liên hệ :</strong></u></h2><br />
-                <h3>&#9751 Địa chỉ : nhà số 3, ngõ 120 hoàng mai,quận hoàng mai ,hà nội</h3>
-                <h3>&#9990 SĐT:0979459173</h3>
-                <h3>&#9840 Năm sinh:26/11/1999</h3>
-                <h3>&#10097 Quê quán :Nam định</h3>
-    
-                <h2><u><strong>Mục tiêu nghề nghiệp:</strong></u></h2><br />
-                <ul>
-                <li><h3>Mục tiêu ngắn hạn:</h3>
-                <p>Trở thành nhân viên chính thức của công ty</p></li>
-                <li><h3>Mục tiêu dài hạn:</h3>
-                <p>Học được tất cả các kiếm thức liên quan về cloud</p></li>
-                </ul>
-                <h2><u><strong>Trình độ học vấn:</strong></u></h2><br />
-                <ul>
-                <li><h3>Trường đại học :HANOI UNIVERSITY OF SCIENCE AND TECHNOLOGY(BÁCH KHOA HÀ NỘI)</h3></li>
-                <li><h3>Chuyên ngành :Cơ điện tử<h3></li>
-                <li><h3> Đang học</h3></li>
-                </ul>
-                <h2><u><strong>Kinh nghiệm làm việc:</strong></u></h2><br />
-                <ul>
-                <li><p>Đang thực tập được 4 tháng tại công ty nhân hòa do anh Tô Thành Công hướng dẫn.Học tập cơ bản về cloud</p></li>
-                </ul>
-                <h2><u><strong>Kỹ năng:</strong></u></h2><br />
-                <ul>
-                <li><h3>Đã tìm hiểu về mô hình OSI</h3></li>
-                <li><h3>Tìm hiểu về IPv4</h3></li>
-                <li><h3>Linux (thư mục cây,đặt IP tĩnh-động,LVM,Swap file,bash script)</h3></li>
-                <li><h3>Wordpress</h3></li>
-                <li><h3>SQL:mariadb</h3></li>
-                </ul>
-                <h2><u><strong>Sở thích:</strong></u></h2><br />
-                <ul>
-                <li><h3> chơi cờ vua và mấy môn thể thao điện tử</h3></p></li>
-                </ul>
-          </div>
-        <div class="col" id="advertisement">
-            <img src="https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/background-dep-de-ghep-anh-2.jpg" alt="khong có quảng cáo" style="width:100%;height:33.33%;">
-            <img src="https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/le-bao-binh-moi-thu-toi-co-duoc-deu-nho-may-man-1.jpg" alt="không có quản cáo"style="width:100%;height:33.33%;">
-            <img src="https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/unnamed.jpg" alt="không có quản cáo"style="width:100%;height:33.33%;">
-        </div>
+      <ul
+      list-style-type: none;
+      padding: 0;
+      width: auto;
+      background-color: #f1f1f1;
+      overflow: hidden;
+
+      >
+          <li><a  href="#home">Home</a></li>
+          <li><a  href="https://news.cloud365.vn/">News</a></li>
+          <li><a  href="https://www.facebook.com/">Contact</a></li>
+          <li><a  href="https://github.com/">About</a></li>
+        </ul> 
+
+
     </div>
-    
-      <div id="footer">
-        <p style="text-align:center">Copyright © 1999 Khuong thanh quang. Blog.</p>
-      </div>
+
+    <div id="left">
+      <ul>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+        <li><a href="#">mẫu CV 1</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <ul>
+        <li>
+          <img src="https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/IMG_5898.JPG" alt="ảnh không tồn tại" style="width:150px;height:200px;">
+          <h1 style="text-align: center;"> Khương Thanh Quang</h1> 
+          <h3 style="text-align: center;">Hanoi University Of Science and Technology ###################################### </h3>
+        </li>
+        <li>
+          <h3><u><strong> Thông tin liên hệ :</strong></u></h3>
+          <p>&#9751 Địa chỉ : nhà số 3, ngõ 120 hoàng mai,quận hoàng mai ,hà nội</p>
+          <p>&#9990 SĐT:0979459173</p>
+          <p>&#9840 Năm sinh:26/11/1999</p>
+          <p>&#10097 Quê quán :Nam định</p>
+        </li>
+        <li>
+          <h3><u><strong>Mục tiêu nghề nghiệp:</strong></u></h3>
+          <p>Mục tiêu ngắn hạn:</p>
+          <p>Trở thành nhân viên chính thức của công ty</p>
+          <p>Mục tiêu dài hạn:</p>
+          <p>Học được tất cả các kiếm thức liên quan về cloud</p>
+        </li>
+        <li>
+          <h3><u><strong>Trình độ học vấn:</strong></u></h3>
+          <p>Trường đại học :HANOI UNIVERSITY OF SCIENCE AND TECHNOLOGY(BÁCH KHOA HÀ NỘI)</p>
+          <p>Chuyên ngành :Cơ điện tử<p>
+          <p> Đang học</p>
+        </li>
+        <li>
+          <h3><u><strong>Kinh nghiệm làm việc:</strong></u></h3>
+          <p>Đang thực tập được 4 tháng tại công ty nhân hòa do anh Tô Thành Công hướng dẫn.Học tập cơ bản về cloud</p>
+        </li>
+        <li>
+          <h3><u><strong>Kỹ năng:</strong></u></h3>
+          <p>Đã tìm hiểu về mô hình OSI</p>
+          <p>Tìm hiểu về IPv4</p>
+          <p>Linux (thư mục cây,đặt IP tĩnh-động,LVM,Swap file,bash script)</p>
+          <p>Wordpress</p>
+          <p>SQL:mariadb</p>
+        </li>
+        <li>
+          <h3><u><strong>Sở thích:</strong></u></h3>
+          <p> chơi cờ vua và mấy môn thể thao điện tử</p>
+        </li>
+      </ul>
+    </div>
+
+    <div id="right">
+
+      <h1>this is right</h1>
+
+    </div>
+
+    <div id="footer">
+      <ul>
+        <li>Desginer: Khương Thanh Quang</li>
+        <li>Địa chỉ :Ngõ 120 Hoàng Mai ,Hoàng Văn Thụ ,Hoàng Mai,Hà Nội</li>
+        <li>Điện Thoại :0979459173</li>
+      </ul>
+      <h3 style="text-align: center; color: white;">Copyright © 1999 Khuong thanh quang. Blog.</h3>
+
+    </div>
 </body>
 </html>
