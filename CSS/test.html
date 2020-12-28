@@ -9,13 +9,87 @@
     <style>
 #header {
   width: 100%;
-  height: 450px;
+  height:400px;
   background-image: url(https://raw.githubusercontent.com/thanhquang99/thuctap/master/images/hinh-nen-2k-dep-ve-thien-nhien-1920x1080.jpg) ;
   background-size: 100% 100%;
 }
-#header table tr{
-  width: 60px;
-  height: 40px;
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+#menu {
+  height:50px ;
+  width: 100%;
 }
 #header table tr a {
   display: block;
@@ -24,7 +98,7 @@
   color:whitesmoke;
   font-family: 'Pacifico';
 }
-#header  ul {
+#menu  ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -32,17 +106,15 @@
   width: 100%;
   background-color: #f1f1f1;
   overflow: hidden;
-  position: relative;
-  top: 295px;
 }
-#header li {
+#menu li {
     width: 25%;
     height: 50px;
   float: left;
   background-color:yellowgreen;
 }
 
-#header li a {
+#menu li a {
   display: block;
   height: 50px;
   color: #000;
@@ -50,13 +122,13 @@
   text-decoration: none;
 }
 
-#header li a.active {
+#menu li a.active {
   height: 50px;
   background-color: #4CAF50;
   color: white;
 }
 
-#header li a:hover:not(.active) {
+#menu li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
@@ -164,10 +236,16 @@
 </style>
 </head>
 <body>
-    <div id="header">
-      <table border="1">
-        <tr><a href="#thanhquang.com"><h1>thanhquang.com</h1></a></tr>
-      </table>
+    <div id="header" class="topnav">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+      
+    </div>
+    <div id="menu">
       <ul
       list-style-type: none;
       padding: 0;
